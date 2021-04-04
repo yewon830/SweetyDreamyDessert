@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 20, in script
+    na "내 이름은 [player_name]"##p는 위에 선언한 케릭터고, 대화창에 변수값을 나오게 할려면 [변수명]으로 사용한다.
+KeyError: u'plyer_name'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 20, in script
+    na "내 이름은 [player_name]"##p는 위에 선언한 케릭터고, 대화창에 변수값을 나오게 할려면 [변수명]으로 사용한다.
+  File "renpy/ast.py", line 715, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1393, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1184, in __call__
+    who = who_pattern.replace("[who]", sub(who))
+  File "renpy/character.py", line 1179, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'plyer_name'
+
+Windows-10-10.0.18362
+Ren'Py 7.4.4.1439
+SweetyDreamyDessert 1.0
+Thu Apr  1 17:07:53 2021

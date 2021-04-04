@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 38: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation.
+    f "부럽다.. 나도 너 따라 가고 싶다."
+    ^
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Thu Apr  1 17:04:53 2021
